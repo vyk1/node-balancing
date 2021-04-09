@@ -1,0 +1,23 @@
+{
+  "name": "node-balancing",
+  "version": "1.0.0",
+  "description": "Simulação de Load Balance com Node.js com AMQP e Redis com carga computacional",
+  "repository": {
+    "url": ""
+  },
+  "scripts": {
+    "redis": "start C:/Users/Teferi/Downloads/redis-2.4.5-win32-win64/64bit/redis-server.exe",
+    "2-workers": "npm run redis && start nodemon QIX/master.js && start nodemon QIX/worker.js && start nodemon QIX/worker.js",
+    "3-workers": "npm run redis && start nodemon QIX/master.js && start nodemon QIX/worker.js && start nodemon QIX/worker.js && start nodemon QIX/worker.js",
+    "4-workers": "npm run redis && start nodemon QIX/master.js && start nodemon QIX/worker.js && start nodemon QIX/worker.js && start nodemon QIX/worker.js && start nodemon QIX/worker.js"
+  },
+  "author": "Victoria Botelho Martins",
+  "license": "ISC",
+  "dependencies": {
+    "amqplib": "^0.7.1",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7",
+    "redis": "^3.0.2",
+    "uuid": "^8.3.2"
+  }
+}

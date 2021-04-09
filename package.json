@@ -1,9 +1,9 @@
 {
   "name": "node-balancing",
   "version": "1.0.0",
-  "description": "Simulação de Load Balance com Node.js com AMQP e Redis com carga computacional",
+  "description": "Load Balance simulation using Node.js, AMQP and Redis with computing time property",
   "repository": {
-    "url": ""
+    "url": "https://github.com/vyk1/node-balancing"
   },
   "scripts": {
     "redis": "start C:/Users/Teferi/Downloads/redis-2.4.5-win32-win64/64bit/redis-server.exe",
@@ -15,7 +15,6 @@
   "license": "ISC",
   "dependencies": {
     "amqplib": "^0.7.1",
-    "express": "^4.17.1",
     "nodemon": "^2.0.7",
     "redis": "^3.0.2",
     "uuid": "^8.3.2"
